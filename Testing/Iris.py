@@ -49,6 +49,15 @@ X_train, X_test, y_train, y_test = st.random_split(X, y, N)
 # print(X, y)
 
 
+p.train(X_train, y_train)
+
+for i in range(len(y_test)):
+
+    print("Model Predict : ", p.predict(X_test[i]))
+    print("Actual Ouput : ", y_test[i])
+    print()
+
+
 
 
 

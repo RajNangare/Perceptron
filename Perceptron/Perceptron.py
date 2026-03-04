@@ -21,10 +21,10 @@ class Perceptron:
 
     def predict(self, input):
         
-        sum = 0
+        sum = float(0)
 
         for i in range(self.weight_lenght):
-            sum += input[i] * self.weight
+            sum += input[i] * self.weight[i]
         
         sum += self.bias
 
@@ -55,9 +55,9 @@ class Perceptron:
                 self.bias += error * self.lr
 
 # Testing
-P = Perceptron(100, 0.01)
-print(P.lr)
-print(P.weight)
+# P = Perceptron(100, 0.01)
+# print(P.lr)
+# print(P.weight)
 
 
     
