@@ -35,7 +35,7 @@ class split:
         for i in range(n):
             if i not in s:
                 X_train.append(input[i])
-                y_test.append(output[i])
+                y_train.append(output[i])
 
 
         return X_train, X_test, y_train, y_test
